@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+
+    <title>Projeto de extensão</title>
+</head>
+
+<body>
+    <div class="fundoVideo">
+        <video class="video" src="src/videos/uefa-champions-league-2022-23-outro-playstation-heineken-intro-br-easysave.net.mp4" autoplay loop muted></video>
+    </div>
+    <header class="cabecalho">
+        <div class="tempo">
+            <h1 class="timer">00:00</h1>
+        </div>
+
+        <div class="patrocinadores">
+            <img class="animation" src="src/images/logoNike.png" alt="logo nike">
+            <img class="hide animation" src="src/images/logoPS.png" alt="logo playstation">
+            <img class="hide animation" src="src/images/logocasasBahia.png" alt="logo casas bahia">
+            <img class="hide animation" src="src/images/logoAsus.png" alt="Logo asus">
+        </div>
+    </header>
+
+    <main class="principal">
+        <div class="time1">
+            <h1 class="nomeTime1"></h1>
+            <img id="real" src="src/images/logoRealMadrid.png" alt="logo Real Madrid">
+        </div>
+
+        <div class="imagemX">
+            <img src="src/images/X.png" alt="versus">
+        </div>
+
+        <div class="time2">
+            <img id="barcelona" src="src/images/logoBarcelona.png" alt="logo Barcelona">
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="jogadoresTime1">
+            <h1 class="nomeJogador1">Karim Benzema</h1>
+            <h3>Gol de pênalti</h3>
+            <p>45+5'</p>
+        </div>
+
+        <div class="jogadoresTime1">
+            <h1 class="nomeJogador2">Jordi Alba</h1>
+            <h3>Gol de Falta</h3>
+            <p>06'</p>
+        </div>
+
+        <div class="logoFifa">
+            <img src="src/images/fifa.png" alt="Logo fifa">
+        </div>
+
+    </footer>
+
+    <script type="module" src="src/js/index.js"></script>
+    <script type="module" src="src/js/cronometro.js"></script>
+</body>
+
+</html>

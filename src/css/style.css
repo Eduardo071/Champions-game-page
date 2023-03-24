@@ -1,0 +1,129 @@
+.hide {
+    display: none;
+}
+
+.animation {
+    animation: out-out 3s ;
+}
+
+@keyframes out-out{
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.fundoVideo {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.fundoVideo .video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2rem;
+    height: 10vh;
+    
+}
+
+.cabecalho .tempo {
+    margin-left: 2rem;
+    color: #fff;
+}
+
+.cabecalho .patrocinadores {
+    margin-right: 2rem;
+    width: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+
+}
+
+
+
+.principal {
+    height: 70vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.principal .time1,
+.time2 {
+    transition: 0.4s;
+}
+
+.around {
+    animation: around 1.6s linear;
+}
+
+@keyframes around {
+    0% {
+        
+    }25%{
+        scale: 1.3;
+    }50%{
+        transform: rotateY(360deg);
+        
+    }100%{
+        scale: 1;
+    }
+}
+
+.footer {
+    position: relative;
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer .jogadoresTime1,
+.jogadoresTime2 {
+    background: rgb(67,132,217);
+background: linear-gradient(90deg, rgba(67,132,217,1) 0%, rgba(47,37,233,1) 50%, rgba(190,0,255,1) 100%);
+    width: 15rem;
+    height: 7rem;
+    margin: auto 24rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    transition: 0.5s;
+    animation: roda-roda 2s linear infinite;
+    color: #fff;
+}
+@keyframes roda-roda {
+    from {
+    }to{
+        transform: rotateY(360deg);
+    }
+}
+.footer .jogadoresTime1:hover,
+.jogadoresTime2:hover{
+    scale: 1.4;
+    animation: none;
+}
+
+.footer .logoFifa {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
